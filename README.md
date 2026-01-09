@@ -1,7 +1,7 @@
+<div align="center">
+
 # Mary Immaculate Catholic Church Website
 ### West Palm Beach, Florida
-
-<div align="center">
 
 **Official parish website serving the community since 2024**
 
