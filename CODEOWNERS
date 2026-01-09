@@ -1,0 +1,6 @@
+# All paths are within the .github repo
+
+* @ADolbyB                    # All files in .github repo
+/profile/* @ADolbyB           # .github/profile/* files: Organization Public README
+/CODEOWNERS @ADolbyB          # .github/CODEOWNERS file: For collaborators
+/README.md @ADolbyB           # .github/README.md: Repo information
