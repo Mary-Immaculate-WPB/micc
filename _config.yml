@@ -1,1 +1,21 @@
+# Jekyll Theme
 theme: jekyll-theme-minimal
+
+# GitHub Pages configuration: Autogenerates https://miwpb.online/sitemap.xml
+plugins:
+  - jekyll-sitemap
+
+# Cache control
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      cache-control: "public, max-age=31536000, immutable"
+  - scope:
+      path: "assets/css"
+    values:
+      cache-control: "public, max-age=31536000, immutable"
+  - scope:
+      path: "assets/js"
+    values:
+      cache-control: "public, max-age=31536000, immutable"
