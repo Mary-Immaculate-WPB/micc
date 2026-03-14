@@ -179,9 +179,9 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo a {
   color: #fff;
 }
-#header .logo img {
+/* #header .logo img {
   max-height: 80px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
