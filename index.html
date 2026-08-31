@@ -31,6 +31,7 @@
   <!-- DNS Prefetch & Preconnect for Performance -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://maps.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>Mary Immaculate Catholic Church, West Palm Beach Florida</title>
@@ -40,8 +41,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" defer>
   <!-- Use CDN bootstrap versions with SRI for security -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" defer>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" media="print" onload="this.media='all'">
   <!-- Vendor CSS Files -->
   <link href="./assets/vendor/animate.css/animate.min.css" rel="stylesheet" defer>
   <link href="./assets/vendor/aos/aos.css" rel="stylesheet" defer>
@@ -53,9 +54,12 @@
   <link href="./assets/css/style.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link href="./assets/css/modal.css" rel="stylesheet" defer>
-  <link href="./assets/css/hover.css" rel="stylesheet">
+  <link href="./assets/css/hover.css" rel="stylesheet" defer>
   <!-- Site Map -->
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+  </noscript>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -65,7 +69,7 @@
       "url": "https://miwpb.online",
       "logo": "https://miwpb.online/assets/img/MI_Circle.png",
       "image": [
-        "https://miwpb.online/assets/img/gallery/Church-4.jpg",
+        "https://miwpb.online/assets/img/gallery/Church-5.jpg",
         "https://miwpb.online/assets/img/gallery/Chapel-1-mod.jpg",
         "https://miwpb.online/assets/img/gallery/Statue-5-mod.jpg"
       ],
@@ -258,7 +262,7 @@
         {
           "@type": "Event",
           "name": "Chaplet of the Divine Mercy",
-          "description": "Hosted by Fr. Tomasz Makowski. Every Wednesday after 12:15pm Mass in the Chapel, and the last Sunday of the month after 11:00am Mass in the Church.",
+          "description": "Every Wednesday after 12:15pm Mass in the Chapel, and the last Sunday of the month after 11:00am Mass in the Church.",
           "eventSchedule": {
             "@type": "Schedule",
             "repeatFrequency": "P1W",
@@ -303,6 +307,7 @@
   </script>
 </head>
 <body>
+  <!-- GLOBAL ASSET VERSION — v=20260329 -->
   <!-- ======= Popup Modal =======-->
   <div class="modal show" data-backdrop="static" id="miccModal" data-aos="slide-up" data-aos-delay="250">
     <div class="modal-dialog">
@@ -343,9 +348,8 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- LOGO SIZE at Line 182 of style.css -->
-      <a href="./index.html" class="logo me-auto me-lg-0"><img src="./assets/img/MI_Circle.png" alt="MI seal" class="img-fluid" fetchpriority="high"></a>
+      <!-- Uncomment below if you prefer to use an image logo --> <!-- LOGO SIZE at Line 182 of style.css -->
+      <img src="./assets/img/MI_Circle.png" alt="MI seal" height="80" width="80" class="img-fluid" loading="eager" fetchpriority="high">
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -385,7 +389,7 @@
       </div>
     </div>
   </section> <!-- End Hero -->
-  <main id="main">
+  <main id="main" role="main">
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about" aria-labelledby="about">
@@ -399,7 +403,7 @@
             <div class="about-img">
               <picture>
                 <source srcset="./assets/img/gallery/MarySkaff-1.webp" type="image/webp">
-                <img src="./assets/img/gallery/MarySkaff-1.jpg" alt="The Virgin Mary Statue" loading="lazy" class="img-fluid">
+                <img src="./assets/img/gallery/MarySkaff-1.jpg" alt="The Virgin Mary Statue" loading="lazy" class="img-fluid" decode="async">
                 <!-- Image Credit Joel Brigida -->
               </picture>
             </div>
@@ -455,46 +459,46 @@
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#">Monday</a><span>Closed</span>
+              <a href="#" aria-label="Mary Immaculate Catholic Church Home">Monday</a><span>Closed</span>
             </div>
             <div class="menu-ingredients">&nbsp;&nbsp;&nbsp;No Mass on Mondays</div>
           </div>
           <div class="col-lg-6 menu-item filter-specialty">
             <div class="menu-content">
-              <a href="#">Tuesday</a><span>12:15pm</span>
+              <a href="#" aria-label="Mary Immaculate Catholic Church Home">Tuesday</a><span>12:15pm</span>
             </div>
             <div class="menu-ingredients">&nbsp;&nbsp;&nbsp;In the Chapel</div>
           </div>
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#">Wednesday</a><span>12:15pm</span>
+              <a href="#" aria-label="Mary Immaculate Catholic Church Home">Wednesday</a><span>12:15pm</span>
             </div>
             <div class="menu-ingredients">&nbsp;&nbsp;&nbsp;In the Chapel</div>
           </div>
           <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#">Thursday</a><span>12:15pm</span>
+              <a href="#" aria-label="Mary Immaculate Catholic Church Home">Thursday</a><span>12:15pm</span>
             </div>
             <div class="menu-ingredients">&nbsp;&nbsp;&nbsp;In the Chapel</div>
           </div>
           <div class="col-lg-6 menu-item filter-specialty">
             <div class="menu-content">
-              <a href="#">Friday</a><span>12:15pm</span>
+              <a href="#" aria-label="Mary Immaculate Catholic Church Home">Friday</a><span>12:15pm</span>
             </div>
             <div class="menu-ingredients">&nbsp;&nbsp;&nbsp;In the Chapel</div>
           </div>
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#">Saturday</a><span>4:00pm Vigil Mass</span>
+              <a href="#" aria-label="Mary Immaculate Catholic Church Home">Saturday</a><span>4:00pm Vigil Mass</span>
             </div>
             <div class="menu-ingredients">&nbsp;&nbsp;&nbsp;In the Church</div>
           </div>
           <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#">Sunday</a><span>8:30am &amp; 11:00am (English)</span>
+              <a href="#" aria-label="Mary Immaculate Catholic Church Home">Sunday</a><span>8:30am &amp; 11:00am (English)</span>
             </div>
             <div class="menu-content">
-              <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><span>5:30pm (Espa&ntilde;ol)</span>
+              <a href="#" aria-label="Mary Immaculate Catholic Church Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><span>5:30pm (Espa&ntilde;ol)</span>
             </div>
             <div class="menu-ingredients">&nbsp;&nbsp;&nbsp;In the Church</div>
           </div>
@@ -578,7 +582,7 @@
               <div class="col-lg-6 text-center mt-4 mt-lg-0">
                 <picture>
                   <source srcset="./assets/img/history/MI_Plaque-rsz.webp" type="image/webp">
-                  <img src="./assets/img/history/MI_Plaque-rsz.jpg" alt="MI Church Plaque" loading="lazy" class="img-fluid">
+                  <img src="./assets/img/history/MI_Plaque-rsz.jpg" alt="MI Church Plaque" loading="lazy" class="img-fluid" decode="async">
                 </picture>
               </div><!-- end col-lg-6 -->
             </div><!-- end inner row -->
@@ -597,14 +601,14 @@
         </div>
         <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-            <!-- BINGO Event: image source: https://wallpaperaccess.com/bingo -->
+            <!-- BINGO Event image source: https://wallpaperaccess.com/bingo -->
             <!-- Note: Image needs to be landscape orientation -->
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
                   <picture>
                     <source srcset="./assets/img/events/Bingo-Game.webp" type="image/webp">
-                    <img src="./assets/img/events/Bingo-Game.jpg" loading="lazy" class="img-fluid" alt="Bingo Stock Image">
+                    <img src="./assets/img/events/Bingo-Game.jpg" loading="lazy" class="img-fluid" alt="Bingo Stock Image" decode="async">
                   </picture>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -630,7 +634,7 @@
                 <div class="col-lg-6">
                   <picture>
                     <source srcset="./assets/img/events/coffee-donut-rsz.webp" type="image/webp">
-                    <img src="./assets/img/events/coffee-donut-rsz.jpg" class="img-fluid" alt="Fellowship Coffee and Donuts" loading="lazy">
+                    <img src="./assets/img/events/coffee-donut-rsz.jpg" class="img-fluid" alt="Fellowship Coffee and Donuts" loading="lazy" decode="async">
                   </picture>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -654,7 +658,7 @@
                 <div class="col-lg-6">
                   <picture>
                     <source srcset="./assets/img/events/legion_of_mary.webp" type="image/webp">
-                    <img src="./assets/img/events/legion_of_mary.jpg" class="img-fluid" alt="Legion of Mary Picture" loading="lazy">
+                    <img src="./assets/img/events/legion_of_mary.jpg" class="img-fluid" alt="Legion of Mary Picture" loading="lazy" decode="async">
                   </picture>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -678,7 +682,7 @@
                 <div class="col-lg-6">
                   <picture>
                     <source srcset="./assets/img/events/DivineMercy.webp" type="image/webp">
-                    <img src="./assets/img/events/DivineMercy.jpg" class="img-fluid" alt="Chaplet of the Divine Mercy Picture" loading="lazy">
+                    <img src="./assets/img/events/DivineMercy.jpg" class="img-fluid" alt="Chaplet of the Divine Mercy Picture" loading="lazy" decode="async">
                   </picture>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -703,7 +707,7 @@
                 <div class="col-lg-6">
                   <picture>
                     <source srcset="./assets/img/events/LentenFishFry-rsz2.webp" type="image/webp">
-                    <img src="./assets/img/events/LentenFishFry-rsz2.jpg" class="img-fluid" alt="Fried Fish and Chips Picture" loading="lazy">
+                    <img src="./assets/img/events/LentenFishFry-rsz2.jpg" class="img-fluid" alt="Fried Fish and Chips Picture" loading="lazy" decode="async">
                   </picture>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -730,7 +734,7 @@
                 <div class="col-lg-6">
                   <picture>
                     <source srcset="./assets/img/events/stations-of-cross-2.webp" type="image/webp">
-                    <img src="./assets/img/events/stations-of-cross-2.jpg" class="img-fluid" alt="Catholic Stations of the Cross" loading="lazy">
+                    <img src="./assets/img/events/stations-of-cross-2.jpg" class="img-fluid" alt="Catholic Stations of the Cross" loading="lazy" decode="async">
                   </picture>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -754,7 +758,7 @@
                 <div class="col-lg-6">
                   <picture>
                     <source srcset="./assets/img/events/RummageSale-rsz.webp" type="image/webp">
-                    <img src="./assets/img/events/RummageSale-rsz.jpg" class="img-fluid" alt="Church Rummage Sale Yard Sale" loading="lazy">
+                    <img src="./assets/img/events/RummageSale-rsz.jpg" class="img-fluid" alt="Church Rummage Sale Yard Sale" loading="lazy" decode="async">
                   </picture>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -780,7 +784,7 @@
                 <div class="col-lg-6">
                   <picture>
                     <source srcset="./assets/img/events/SkaffDecorated-1.webp" type="image/webp">
-                    <img src="./assets/img/events/SkaffDecorated-1.jpg" class="img-fluid" alt="Decorated William G. Skaff Center" loading="lazy">
+                    <img src="./assets/img/events/SkaffDecorated-1.jpg" class="img-fluid" alt="Decorated William G. Skaff Center" loading="lazy" decode="async">
                   </picture>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -817,12 +821,12 @@
           <div class="col-lg-3 col-md-4">
             <div class="hovereffect gallery-item">
               <picture>
-                <source srcset="./assets/img/gallery/Church-4.webp" type="image/webp">
-                <img class="img-fluid" src="./assets/img/gallery/Church-4.jpg" alt="Inside the Church" loading="lazy">
+                <source srcset="./assets/img/gallery/Church-5.webp" type="image/webp">
+                <img class="img-fluid" src="./assets/img/gallery/Church-5.jpg" alt="Inside the Church" loading="lazy" decoding="async">
               </picture>
               <div class="overlay">
                 <h2>Inside The Church</h2>
-                <a class="gallery-lightbox" href="./assets/img/gallery/Church-4.webp">View in Gallery</a>
+                <a class="gallery-lightbox" href="./assets/img/gallery/Church-5.webp">View in Gallery</a>
               </div>
             </div>
           </div>
@@ -830,7 +834,7 @@
             <div class="hovereffect gallery-item">
               <picture>
                 <source srcset="./assets/img/gallery/Chapel-1-mod.webp" type="image/webp">
-                <img class="img-fluid" src="./assets/img/gallery/Chapel-1-mod.jpg" alt="Inside the Chapel" loading="lazy">
+                <img class="img-fluid" src="./assets/img/gallery/Chapel-1-mod.jpg" alt="Inside the Chapel" loading="lazy" decoding="async">
               </picture>
               <div class="overlay">
                 <h2>Inside The Chapel</h2>
@@ -842,7 +846,7 @@
             <div class="hovereffect gallery-item">
               <picture>
                 <source srcset="./assets/img/gallery/Church-12-mod.webp" type="image/webp">
-                <img class="img-fluid" src="./assets/img/gallery/Church-12-mod.jpg" alt="Stained Glass Inside the Church" loading="lazy">
+                <img class="img-fluid" src="./assets/img/gallery/Church-12-mod.jpg" alt="Stained Glass Inside the Church" loading="lazy" decoding="async">
               </picture>
               <div class="overlay">
                 <h2>Stained Glass Inside The Church</h2>
@@ -854,7 +858,7 @@
             <div class="hovereffect gallery-item">
               <picture>
                 <source srcset="./assets/img/gallery/Statue-4.webp" type="image/webp">
-                <img class="img-fluid" src="./assets/img/gallery/Statue-4.jpg" alt="Outside the Skaff Entrance" loading="lazy">
+                <img class="img-fluid" src="./assets/img/gallery/Statue-4.jpg" alt="Outside the Skaff Entrance" loading="lazy" decoding="async">
               </picture>
               <div class="overlay">
                   <h2>Outside the Skaff Center</h2>
@@ -866,7 +870,7 @@
             <div class="hovereffect gallery-item">
               <picture>
                 <source srcset="./assets/img/gallery/Statue-5-mod.webp" type="image/webp">
-                <img class="img-fluid" src="./assets/img/gallery/Statue-5-mod.jpg" alt="Outside the Church" loading="lazy">
+                <img class="img-fluid" src="./assets/img/gallery/Statue-5-mod.jpg" alt="Outside the Church" loading="lazy" decoding="async">
               </picture>
               <div class="overlay">
                 <h2>Outside The Church</h2>
@@ -878,7 +882,7 @@
             <div class="hovereffect gallery-item">
               <picture>
                 <source srcset="./assets/img/gallery/Office-4.webp" type="image/webp">
-                <img class="img-fluid" src="./assets/img/gallery/Office-4.jpg" alt="Inside the Church Office" loading="lazy">
+                <img class="img-fluid" src="./assets/img/gallery/Office-4.jpg" alt="Inside the Church Office" loading="lazy" decoding="async">
               </picture>
               <div class="overlay">
                 <h2>Inside the Church Office</h2>
@@ -890,7 +894,7 @@
             <div class="hovereffect gallery-item">
               <picture>
                 <source srcset="./assets/img/gallery/SkaffDecorated-3.webp" type="image/webp">
-                <img class="img-fluid" src="./assets/img/gallery/SkaffDecorated-3.jpg" alt="Inside the William G. Skaff Center" loading="lazy">
+                <img class="img-fluid" src="./assets/img/gallery/SkaffDecorated-3.jpg" alt="Inside the William G. Skaff Center" loading="lazy" decoding="async">
               </picture>
               <div class="overlay">
                 <h2>Inside The Skaff Center</h2>
@@ -902,7 +906,7 @@
             <div class="hovereffect gallery-item">
               <picture>
                 <source srcset="./assets/img/gallery/GiftStore-4.webp" type="image/webp">
-                <img class="img-fluid" src="./assets/img/gallery/GiftStore-4.jpg" alt="Skaff Center Gift Store" loading="lazy">
+                <img class="img-fluid" src="./assets/img/gallery/GiftStore-4.jpg" alt="Skaff Center Gift Store" loading="lazy" decoding="async">
               </picture>
               <div class="overlay">
                 <h2>The Skaff Center Gift Store</h2>
@@ -923,7 +927,7 @@
         </div>
       </div>
       <div data-aos="fade-up">
-        <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.0606018766593!2d-80.09609188442128!3d26.710510883215147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d61f27f19315%3A0x23bf442176a3d2d4!2sMary%20Immaculate%20Catholic%20Church!5e0!3m2!1sen!2sus!4v1657863982258!5m2!1sen!2sus" frameborder="0" title="Google Interactive Map" allowfullscreen></iframe>
+        <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.0606018766593!2d-80.09609188442128!3d26.710510883215147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d61f27f19315%3A0x23bf442176a3d2d4!2sMary%20Immaculate%20Catholic%20Church!5e0!3m2!1sen!2sus!4v1657863982258!5m2!1sen!2sus" frameborder="0" title="Google Interactive Map" loading="lazy" allowfullscreen></iframe>
       </div>
       <div class="container" data-aos="fade-up">
         <div class="row mt-5">
@@ -949,13 +953,13 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email Us:</h4>
-                <p><a href="mailto:miwpb@miwpb.online">miwpb [at] miwpb.online</a></p>
+                <p><a href="mailto:miwpb@miwpb.online" title="email us">miwpb [at] miwpb.online</a></p>
               </div>
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Office Numbers:</h4>
-                <p>Tel:&nbsp;<a href="Tel:+15616868128">561 686 8128</a></p>
-                <p>Fax:&nbsp;<a href="Tel:+15615083862">561 508 3862</a></p>
+                <p>Tel:&nbsp;<a href="Tel:+15616868128" title="call us">561 686 8128</a></p>
+                <p>Fax:&nbsp;<a href="Tel:+15615083862" title="send a fax">561 508 3862</a></p>
                 <p></p>
               </div>
             </div>
@@ -974,10 +978,10 @@
             <div class="footer-info">
               <h3>Connect With MICC</h3>
               <div class="social-links mt-3">
-                <a href="https://www.facebook.com/maryimmaculate.catholicchurch" class="facebook" title="Facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.twitch.tv/miwpb" class="twitch" title="Twitch TV" target="_blank"><i class="bx bxl-twitch"></i></a>
-                <a href="https://vimeo.com/user92995369" class="vimeo" title="Vimeo" target="_blank"><i class="bx bxl-vimeo"></i></a>
-                <a href="https://www.linkedin.com/company/mary-immaculate-wpb/" class="linkedin" title="LinkedIn" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.facebook.com/maryimmaculate.catholicchurch" class="facebook" title="Facebook" target="_blank" aria-label="MICC Facebook Page Link"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.twitch.tv/miwpb" class="twitch" title="Twitch TV" target="_blank"><i class="bx bxl-twitch" aria-label="MICC Twitch TV Stream"></i></a>
+                <a href="https://vimeo.com/user92995369" class="vimeo" title="Vimeo" target="_blank"><i class="bx bxl-vimeo" aria-label="MICC Vimeo Video Account"></i></a>
+                <a href="https://www.linkedin.com/company/mary-immaculate-wpb/" class="linkedin" title="LinkedIn" target="_blank" aria-label="Mary Immaculate WPB on LinkedIn"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -1014,7 +1018,7 @@
         Donated with &#9829; by the Brigida Family.
       </div>
       <div class="credits">
-        Copyright&nbsp;&copy;&nbsp;2022&nbsp;&dash;&nbsp;<script>document.write(new Date().getFullYear())</script>&nbsp;Mary Immaculate Catholic Church. All Rights Reserved.<br>
+        Copyright&nbsp;&copy;&nbsp;2022&nbsp;&dash;&nbsp;<script defer>document.write(new Date().getFullYear())</script>&nbsp;Mary Immaculate Catholic Church. All Rights Reserved.<br>
       </div>
     </div>
   </footer> <!-- End Footer -->
@@ -1030,7 +1034,7 @@
   <script src="./assets/js/main.js" defer></script>
   <!-- JQuery for Popup Modal -->
   <!-- Comment Out These 2 Lines To Deactivate Popup Modal -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="./assets/js/modal.js"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
+  <script src="./assets/js/modal.js" defer></script> -->
 </body>
 </html>
