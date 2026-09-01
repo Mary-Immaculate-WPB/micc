@@ -3,7 +3,7 @@
 # Mary Immaculate Catholic Church Website
 ### West Palm Beach, Florida
 
-**Official parish website serving the community since 2024**
+**Official parish website serving the community since 2022**
 
 [![Website Status](https://img.shields.io/website?style=for-the-badge&down_message=Offline&label=Website&logo=Github&up_message=Online&url=https%3A%2F%2Fmiwpb.online)](https://miwpb.online)
 [![GH Pages](https://img.shields.io/github/deployments/ADolbyB/micc/github-pages?style=for-the-badge&logo=github&logoSize=auto&label=Deployment)](https://github.com/ADolbyB/micc/deployments)
@@ -143,7 +143,7 @@ This website is a **charitable donation** to Mary Immaculate Catholic Church. Th
 
 ## 📄 License & Attribution
 
-**Website donated with ♥ by Joel, Ashley, Andrew & Matthew.**
+**Website donated with ♥ by the Brigida Family**
 
 This project is maintained as a service to Mary Immaculate Catholic Church. Content belongs to the parish and Diocese of Palm Beach.
 
